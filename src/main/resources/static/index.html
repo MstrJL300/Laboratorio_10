@@ -10,6 +10,13 @@
         <title>Blueprints</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <select ng-model="variable">
+            <option  ng-repeat="o in variable" value="{{o}}">
+            {{o}}
+            </option>
+        </select>
+    
     </head>
     <body >
 
