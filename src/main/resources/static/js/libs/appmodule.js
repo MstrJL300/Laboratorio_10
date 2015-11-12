@@ -6,6 +6,7 @@
 
             function($scope,$http){
                 $scope.posts = [];
+                
                 $scope.loadData = function() {
                     var configList = {
                         method: "GET",
@@ -15,7 +16,7 @@
                     var response=$http(configList);
 
                     response.success(function(data, status, headers, config) {
-                        $scope.variable = data;
+                        $scope.post = data;
                     });
 
                     response.error(function(data, status, headers, config) {
