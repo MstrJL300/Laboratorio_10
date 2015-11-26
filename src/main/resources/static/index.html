@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="modone">
+<html ng-app="modone" ng-controller="plan_control">
     
     <head >
         <script src="js/libs/angular.min.js"></script>
@@ -11,13 +11,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <select ng-controller="plan_control">
+        <select ng-model="plan_control">
             <option  ng-repeat="o in posts" value="{{o}}">
                 {{o}}
             </option>
         </select>
         
-        <button ng-click="loadData()"> X </button>
+        <button ng-click="loadData()">Load blueprints</button>
     
     </head>
     
