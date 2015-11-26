@@ -11,13 +11,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <select ng-model="plan_control">
-            <option  ng-repeat="o in posts" value="{{o}}">
-                {{o}}
+        {{o}}
+        
+        <select ng-model="o">
+            <option  ng-repeat="p in posts" value="{{p}}">
+                {{p}}
             </option>
         </select>
         
         <button ng-click="loadData()">Load blueprints</button>
+        
+        <button ng-click="select()">Select</button>
+        
+        <canvas id="myCanvas" width="800" height="600" style="border:1px solid"/> 
     
     </head>
     
