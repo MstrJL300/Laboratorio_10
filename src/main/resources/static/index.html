@@ -6,19 +6,22 @@
         <script src="js/libs/angular-route.js"></script>
         <script src="js/libs/appmodule.js"></script>
         
-         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <title>Blueprints</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <select ng-model="blueprint">
-            <option  ng-repeat="o in blueprint" value="{{o}}">
-            {{o}}
+        <select ng-controller="plan_control">
+            <option  ng-repeat="o in posts" value="{{o}}">
+                {{o}}
             </option>
         </select>
+        
+        <button ng-click="loadData()"> X </button>
     
     </head>
-    <body >
+    
+    <body>
 
         <span>
           {{23+17}}
